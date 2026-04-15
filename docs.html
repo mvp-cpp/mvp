@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MVP - 说明文档</title>
+  <meta name="description" content="MVP 安装、编译、运行与常见问题说明文档。" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="./index.html">MVP</a>
+      <nav>
+        <a href="./index.html">主页</a>
+        <a href="./download.html">下载</a>
+        <a href="./docs.html" class="active">说明文档</a>
+        <a href="https://github.com/mvp-cpp/mvp" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container narrow">
+      <h1>说明文档</h1>
+      <p class="lead">
+        本页提供 MVP 的安装、编译、运行方式与常见问题说明。后续可根据项目进展持续扩展。
+      </p>
+
+      <div class="doc-toc card">
+        <h2>目录</h2>
+        <ul>
+          <li><a href="#intro">1. 项目简介</a></li>
+          <li><a href="#requirements">2. 环境要求</a></li>
+          <li><a href="#install">3. 安装与编译</a></li>
+          <li><a href="#usage">4. 使用方式</a></li>
+          <li><a href="#faq">5. 常见问题</a></li>
+        </ul>
+      </div>
+
+      <section id="intro" class="doc-section">
+        <h2>1. 项目简介</h2>
+        <p>
+          MVP 是一个基于 C++ 开发的软件项目，面向高性能计算与工程化使用场景。
+          本项目强调计算效率、结构清晰和易于维护，适合科研或生产环境部署。
+        </p>
+      </section>
+
+      <section id="requirements" class="doc-section">
+        <h2>2. 环境要求</h2>
+        <ul>
+          <li>C++17 或更高版本编译器</li>
+          <li>CMake 3.16 及以上</li>
+          <li>Git</li>
+          <li>Linux / macOS / Windows（可按实际情况调整）</li>
+        </ul>
+      </section>
+
+      <section id="install" class="doc-section">
+        <h2>3. 安装与编译</h2>
+        <p>推荐通过 Git 获取源码后进行本地构建：</p>
+        <pre><code>git clone https://github.com/mvp-cpp/mvp.git
+cd mvp
+mkdir build
+cd build
+cmake ..
+cmake --build . -j</code></pre>
+
+        <p>如需指定编译器或构建类型，可根据实际需要调整：</p>
+        <pre><code>cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake --build . -j</code></pre>
+      </section>
+
+      <section id="usage" class="doc-section">
+        <h2>4. 使用方式</h2>
+        <p>以下为示例命令，请根据项目真实可执行文件名称修改：</p>
+        <pre><code>./mvp --help
+./mvp --input example.txt --output result.txt</code></pre>
+
+        <p>建议在此处继续补充：</p>
+        <ul>
+          <li>输入文件格式说明</li>
+          <li>命令行参数说明</li>
+          <li>运行结果示例</li>
+          <li>典型应用场景</li>
+        </ul>
+      </section>
+
+      <section id="faq" class="doc-section">
+        <h2>5. 常见问题</h2>
+
+        <h3>Q1：编译失败怎么办？</h3>
+        <p>
+          请先检查编译器版本、CMake 版本以及依赖库是否安装完整，并确认当前平台是否受支持。
+        </p>
+
+        <h3>Q2：如何获取最新版本？</h3>
+        <p>
+          请前往 <a href="./download.html">下载页</a> 或 GitHub Releases 页面获取最新发布版本。
+        </p>
+
+        <h3>Q3：如何反馈问题？</h3>
+        <p>
+          欢迎通过 GitHub 仓库的 Issues 页面提交问题与建议。
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 MVP Project. Maintained by mvp-cpp.</p>
+      <p>
+        <a href="https://github.com/mvp-cpp/mvp/issues" target="_blank" rel="noopener noreferrer">Submit an Issue</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
