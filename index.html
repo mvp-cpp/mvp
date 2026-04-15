@@ -3,20 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Software</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>MVP - 高性能 C++ 软件</title>
+  <meta name="description" content="MVP 是一个面向高性能计算与数据分析的 C++ 软件项目，提供高效、稳定、易用的功能支持。" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-  <nav>
-    <a href="./index.html">首页</a>
-    <a href="./download.html">下载</a>
-    <a href="./docs/index.html">文档</a>
-    <a href="./docs/install.html">安装</a>
-    <a href="./docs/usage.html">使用说明</a>
-  </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="./index.html">MVP</a>
+      <nav>
+        <a href="./index.html" class="active">主页</a>
+        <a href="./download.html">下载</a>
+        <a href="./docs.html">说明文档</a>
+        <a href="https://github.com/mvp-cpp/mvp" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
 
-  <h1>My Software</h1>
-  <p>这是一个软件介绍网站。</p>
-  <p><a href="./download.html">前往下载</a></p>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="badge">MVP · C++ Software</span>
+          <h1>高性能、简洁、可靠的 C++ 软件发布主页</h1>
+          <p>
+            MVP 是一个面向科研计算与工程应用的软件项目，聚焦高效计算、稳定执行与易于部署。
+            该页面用于展示项目简介、安装方式、使用说明与版本下载。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./download.html">下载软件</a>
+            <a class="btn btn-secondary" href="./docs.html">查看文档</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>项目亮点</h3>
+          <ul>
+            <li>基于 C++ 开发，注重性能与可扩展性</li>
+            <li>适用于 Linux / macOS / Windows 场景</li>
+            <li>支持源码编译与版本发布下载</li>
+            <li>面向科研与工程用户的清晰文档体系</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>项目简介</h2>
+        <p>
+          MVP 致力于提供一个结构清晰、部署方便、运行高效的软件方案。
+          你可以在本网站中快速了解项目功能、获取安装方式，并查看基础使用说明。
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>核心功能</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>高性能计算</h3>
+            <p>采用 C++ 实现核心逻辑，面向大规模数据处理与高效运算场景进行优化。</p>
+          </div>
+          <div class="card">
+            <h3>跨平台部署</h3>
+            <p>支持常见开发与运行环境，便于在服务器、本地工作站和容器环境中部署。</p>
+          </div>
+          <div class="card">
+            <h3>简洁易用</h3>
+            <p>提供明确的安装流程与使用文档，降低初次使用门槛，方便快速上手。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>快速入口</h2>
+        <div class="grid grid-3">
+          <a class="link-card" href="./download.html">
+            <h3>下载软件</h3>
+            <p>查看最新版本、源码包与发布说明。</p>
+          </a>
+          <a class="link-card" href="./docs.html">
+            <h3>说明文档</h3>
+            <p>查看安装、配置、运行示例与常见问题。</p>
+          </a>
+          <a class="link-card" href="https://github.com/mvp-cpp/mvp" target="_blank" rel="noopener noreferrer">
+            <h3>源码仓库</h3>
+            <p>浏览源代码、提交 issue、参与项目协作。</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 MVP Project. Maintained by mvp-cpp.</p>
+      <p>
+        <a href="https://github.com/mvp-cpp/mvp" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
